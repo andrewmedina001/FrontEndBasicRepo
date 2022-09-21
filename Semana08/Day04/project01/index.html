@@ -45,7 +45,7 @@
         <!-- MAIN -->
         <main class="container-fluid">
 
-          <button type="button" class="btn btn-primary btn-lg" id="btnCreate" data-bs-toggle="modal" data-bs-target="#modalCreate">
+          <button type="button" class="btn btn-primary btn-lg" id="btnCreate" data-bs-toggle="modal">
             Add Product
           </button>
 
@@ -66,7 +66,7 @@
           <div class="modal-dialog">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Create Product Modal</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Modal of Create Product</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
@@ -74,22 +74,22 @@
                 <form id="formCreate">
                   <div class="mb-2">
                     <label class="form-label">Name of product:</label>
-                    <input type="text" class="form-control" name="p_name">
+                    <input type="text" class="form-control" name="p_name" required="true">
                   </div>
                   <div class="mb-2">
                     <label class="form-label">Description of product:</label>
-                    <input type="text" class="form-control" name="p_desc">
+                    <input type="text" class="form-control" name="p_desc" required="true">
                   </div>
                   <div class="mb-2">
                     <label class="form-label">Price of product:</label>
-                    <input type="number" class="form-control" name="p_price">
+                    <input type="number" class="form-control" name="p_price" required="true">
                   </div>
                 </form>
 
               </div>
               <div class="modal-footer">
+                <button class="btn btn-primary" type="submit" form="formCreate">Save Changes</button>
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save Changes</button>
               </div>
             </div>
           </div>
@@ -103,7 +103,7 @@
             crossorigin="anonymous"
             >
         </script>
-
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <!--  -->
         <script src="./js/app.js" type="module"></script>
     </body>
