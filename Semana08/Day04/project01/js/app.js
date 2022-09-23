@@ -29,6 +29,7 @@ formCreate.addEventListener("submit",async(event01)=>{
         p_price:formCreate.p_price.value,
         p_desc:formCreate.p_desc.value
     }
+    // Al parecer el valor de la URL de la imagen la añade por default el MockAPI
     try{
         await createProduct(newProduct)
         formCreate.reset()
